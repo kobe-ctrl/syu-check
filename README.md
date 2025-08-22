@@ -26,5 +26,5 @@ Feel free to submit issues and enhancment requests!
 
 ```bash
 git clone https://github.com/kobethearchuser/syu-check.git
-cd arch-update-checker
-chmod +x arch_update_checker.py
+cd syu-check
+chmod +x syu-check.py
