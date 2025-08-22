@@ -25,6 +25,6 @@ Feel free to submit issues and enhancment requests!
 ## Installation
 
 ```bash
-git clone https://github.com/kobethearchuser/syu-check.git
+git clone https://github.com/kobe-ctrl/syu-check.git
 cd syu-check
 chmod +x syu-check.py
