@@ -82,12 +82,6 @@ def try_curl(url):
         print(f"curl exception for {url}: {e}")
         return None
 
-def debug_save_html(html_content, filename="debug_output.html"):
-    """Saves the HTML content to a file for debugging."""
-    with open(filename, 'w', encoding='utf-8') as f:
-        f.write(html_content)
-    print(f"✅ Debug: HTML content saved to {filename}. Please inspect this file.")
-
 def parse_news(html_content):
     """Parses the HTML to extract news titles and dates."""
     soup = BeautifulSoup(html_content, 'html.parser')
