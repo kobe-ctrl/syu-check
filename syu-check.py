@@ -41,25 +41,7 @@ def fetch_news():
 
     print("Error: All mirrors and methods failed.")
     sys.exit(1)
-
-def try_curl(url):
-    """Try to fetch using curl"""
-    try:
-        result = subprocess.run([
-            'curl',
-            '-s',           # Silent mode
-            '-L',           # Follow redirects
-            '-4',           # Force IPv4 only (skip IPv6)
-            '--max-time', '10',  # Timeout after 10 seconds
-            url
-        ], capture_output=True, text=True, timeout=15)
-
-        if result.returncode == 0:
-            return result.stdout
-        return None
-    except:
-        return None
-
+   
 def try_python_requests(url):
     """Try to fetch using Python requests with stealth headers"""
     try:
