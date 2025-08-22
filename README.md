@@ -9,6 +9,19 @@ A Python script that checks Arch Linux news for warnings about system updates th
 - Alerts users when updates require special attention
 - Provides direct links to relevant news posts
 
+## contribute
+Feel free to submit issues and enhancment requests!
+
+## Dependencies
+
+    Python 3.x
+
+    python-requests library
+
+    python-beautifulsoup4 library
+
+    curl (for alternative fetching method)
+
 ## Installation
 
 ```bash
