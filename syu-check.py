@@ -208,6 +208,25 @@ def main():
         print("✅ \033[92mNo recent warnings found.\033[0m")
         print("It is likely safe to proceed with 'sudo pacman -Syu'.")
         print("(Always remember to read the pacman output carefully before confirming!)")
+        
+        # Add the update prompt here
+        try:
+            response = input("\nWould you like to update using sudo pacman -Syu? y/n: ")
+            
+            if response.lower() in ['y', 'yes']:
+                print("Running system update...")
+                import os
+                result = os.system("sudo pacman -Syu")
+                if result == 0:
+                    print("✅ Update completed successfully!")
+                else:
+                    print("❌ Update failed or was cancelled")
+            else:
+                print("Update cancelled.")
+                
+        except KeyboardInterrupt:
+            print("\nUpdate cancelled by user.")
+        
         sys.exit(0)
 
 if __name__ == "__main__":
