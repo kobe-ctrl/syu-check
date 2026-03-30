@@ -14,11 +14,11 @@ Feel free to submit issues and enhancment requests!
 
 ## Dependencies
 
-    Python 3.x
+    Python3
 
     python-requests library
 
-    python-beautifulsoup4 library
+    python-beautifulsoup-4 library
 
     curl (for alternative fetching method)
 
