@@ -24,11 +24,10 @@ Feel free to submit issues and enhancment requests!
 
 ## Installation
 
-```bash
 git clone https://github.com/kobe-ctrl/syu-check.git
 cd syu-check
 chmod +x syu-check.py
 
-## Usage
-
-./syu-check.py
+## Usage 
+alias syu-check='python syu-check/syu-check.py'
+syu-check
