@@ -28,3 +28,7 @@ Feel free to submit issues and enhancment requests!
 git clone https://github.com/kobe-ctrl/syu-check.git
 cd syu-check
 chmod +x syu-check.py
+
+## Usage
+
+./syu-check.py
